@@ -3,13 +3,15 @@ import { Ionicons } from "@expo/vector-icons";
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "purple" }}>
+    <Tabs
+      screenOptions={{ tabBarActiveTintColor: "indigo", headerShown: false }}
+    >
       <Tabs.Screen
-        name="home/index"
+        name="(stack)"
         options={{
-          title: "Home Screen",
+          title: "Stack",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="home-outline" color={color} />
+            <Ionicons size={28} name="person-add-outline" color={color} />
           ),
         }}
       />
